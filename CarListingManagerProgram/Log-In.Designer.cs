@@ -33,8 +33,8 @@
             label3 = new Label();
             textBox1 = new TextBox();
             textBox2 = new TextBox();
-            label4 = new Label();
-            checkBox1 = new CheckBox();
+            button1 = new Button();
+            button2 = new Button();
             SuspendLayout();
             // 
             // label1
@@ -59,9 +59,9 @@
             // label3
             // 
             label3.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            label3.Location = new Point(113, 275);
+            label3.Location = new Point(113, 231);
             label3.Name = "label3";
-            label3.Size = new Size(104, 40);
+            label3.Size = new Size(104, 25);
             label3.TabIndex = 2;
             label3.Text = "PASSWORD:";
             // 
@@ -74,37 +74,38 @@
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(223, 277);
+            textBox2.Location = new Point(223, 231);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(212, 23);
             textBox2.TabIndex = 4;
             // 
-            // label4
+            // button1
             // 
-            label4.AutoSize = true;
-            label4.Location = new Point(148, 315);
-            label4.Name = "label4";
-            label4.Size = new Size(69, 15);
-            label4.TabIndex = 5;
-            label4.Text = "Save Log-In\r\n";
+            button1.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button1.Location = new Point(223, 271);
+            button1.Name = "button1";
+            button1.Size = new Size(97, 36);
+            button1.TabIndex = 5;
+            button1.Text = "ADD USER";
+            button1.UseVisualStyleBackColor = true;
             // 
-            // checkBox1
+            // button2
             // 
-            checkBox1.AutoSize = true;
-            checkBox1.Location = new Point(223, 316);
-            checkBox1.Name = "checkBox1";
-            checkBox1.Size = new Size(15, 14);
-            checkBox1.TabIndex = 6;
-            checkBox1.UseVisualStyleBackColor = true;
-            checkBox1.CheckedChanged += checkBox1_CheckedChanged;
+            button2.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button2.Location = new Point(338, 271);
+            button2.Name = "button2";
+            button2.Size = new Size(97, 36);
+            button2.TabIndex = 6;
+            button2.Text = "LOG-IN";
+            button2.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(595, 450);
-            Controls.Add(checkBox1);
-            Controls.Add(label4);
+            Controls.Add(button2);
+            Controls.Add(button1);
             Controls.Add(textBox2);
             Controls.Add(textBox1);
             Controls.Add(label3);
@@ -123,7 +124,7 @@
         private Label label3;
         private TextBox textBox1;
         private TextBox textBox2;
-        private Label label4;
-        private CheckBox checkBox1;
+        private Button button1;
+        private Button button2;
     }
 }
